@@ -24,7 +24,7 @@ def start(que, plot_instance, size=(640,480), name='Huwdu', color=BLACK):
     while not done:
         que_handle(que, surface, pygame.display, color)
         for e in pygame.event.get():
-            #event_post(plot_instance, e)
+            event_post(plot_instance, e)
             if e.type == pygame.QUIT or (e.type == pygame.KEYUP and e.key == pygame.K_ESCAPE):
                 done=1
                 break
